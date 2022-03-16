@@ -17,8 +17,10 @@
 // export default router;
 
 const express = require('express');
+
 const router = express.Router();
 const controller = require('../controllers/fileController');
+
 let routes = (app) => {
   router.post('/upload', controller.upload);
   router.get('/files', controller.getListFiles);
